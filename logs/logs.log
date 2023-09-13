@@ -1,0 +1,74 @@
+12-09-2023 21:48:29 - None - None - INFO -  * Restarting with stat
+13-09-2023 14:54:35 - None - None - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13-09-2023 14:54:35 - None - None - INFO - [33mPress CTRL+C to quit[0m
+13-09-2023 14:54:35 - None - None - INFO -  * Restarting with stat
+13-09-2023 14:54:35 - None - None - WARNING -  * Debugger is active!
+13-09-2023 14:54:35 - None - None - INFO -  * Debugger PIN: 135-658-948
+13-09-2023 14:54:46 - http://127.0.0.1:5000/ - 127.0.0.1 - INFO - Index start...
+13-09-2023 14:54:46 - http://127.0.0.1:5000/ - 127.0.0.1 - INFO - Index start...
+13-09-2023 14:54:46 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:54:46] "GET / HTTP/1.1" 200 -
+13-09-2023 14:54:46 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:54:46] "GET / HTTP/1.1" 200 -
+13-09-2023 14:54:47 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:54:47] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:54:47 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:54:47] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:54:48 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:54:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:54:48 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:54:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:55:32 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:32] "GET /login.html HTTP/1.1" 200 -
+13-09-2023 14:55:32 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:32] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:55:32 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:55:38 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:38] "[32mPOST /login.html HTTP/1.1[0m" 302 -
+13-09-2023 14:55:38 - http://127.0.0.1:5000/secure.html - 127.0.0.1 - INFO - Secure start,Nico
+13-09-2023 14:55:38 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:38] "GET /secure.html HTTP/1.1" 200 -
+13-09-2023 14:55:38 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:38] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:55:38 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:55:44 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:44] "GET /spenden.html HTTP/1.1" 200 -
+13-09-2023 14:55:44 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:44] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:55:44 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:55:48 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:48] "GET /bilanz.html HTTP/1.1" 200 -
+13-09-2023 14:55:48 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:48] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:55:48 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:55:59 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:59] "GET /spenden.html HTTP/1.1" 200 -
+13-09-2023 14:55:59 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:59] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:55:59 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:55:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:56:24 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:24] "GET /spenden.html HTTP/1.1" 200 -
+13-09-2023 14:56:24 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:24] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:56:24 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:56:26 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:26] "GET /bilanz.html HTTP/1.1" 200 -
+13-09-2023 14:56:26 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:26] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:56:26 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:56:28 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:28] "GET /ausgaben.html HTTP/1.1" 200 -
+13-09-2023 14:56:28 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:28] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:56:28 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:56:54 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:54] "GET /ausgaben.html HTTP/1.1" 200 -
+13-09-2023 14:56:54 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:54] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:56:54 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:56:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 14:58:21 - None - None - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13-09-2023 14:58:21 - None - None - INFO - [33mPress CTRL+C to quit[0m
+13-09-2023 14:58:21 - None - None - INFO -  * Restarting with stat
+13-09-2023 14:58:22 - None - None - WARNING -  * Debugger is active!
+13-09-2023 14:58:22 - None - None - INFO -  * Debugger PIN: 135-658-948
+13-09-2023 14:58:26 - http://127.0.0.1:5000/ - 127.0.0.1 - INFO - Index start...
+13-09-2023 14:58:26 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:58:26] "GET / HTTP/1.1" 200 -
+13-09-2023 14:58:26 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:58:26] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 14:58:26 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 14:58:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 15:23:54 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:23:54] "GET /login.html HTTP/1.1" 200 -
+13-09-2023 15:23:54 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:23:54] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 15:23:54 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:23:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 15:24:05 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:05] "[32mPOST /login.html HTTP/1.1[0m" 302 -
+13-09-2023 15:24:05 - http://127.0.0.1:5000/secure.html - 127.0.0.1 - INFO - Secure start,Nico
+13-09-2023 15:24:05 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:05] "GET /secure.html HTTP/1.1" 200 -
+13-09-2023 15:24:05 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:05] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 15:24:05 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 15:24:09 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:09] "GET /ausgaben.html HTTP/1.1" 200 -
+13-09-2023 15:24:09 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:09] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 15:24:09 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 15:24:13 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:13] "GET /bilanz.html HTTP/1.1" 200 -
+13-09-2023 15:24:13 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:13] "GET /static/css/main.css HTTP/1.1" 200 -
+13-09-2023 15:24:13 - None - None - INFO - 127.0.0.1 - - [13/Sep/2023 15:24:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13-09-2023 21:21:50 - None - None - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13-09-2023 21:21:50 - None - None - INFO - [33mPress CTRL+C to quit[0m
+13-09-2023 21:21:50 - None - None - INFO -  * Restarting with stat
+13-09-2023 21:21:50 - None - None - WARNING -  * Debugger is active!
+13-09-2023 21:21:50 - None - None - INFO -  * Debugger PIN: 120-934-485

@@ -1,0 +1,56 @@
+{% extends "base.html" %} 
+
+{% block head %}
+
+<title>Spenden und Ausgaben</title>
+<style>
+@media screen and (min-width:901px) {
+    /* Noch größer, noch mehr Regeln */
+    .cons_flex{
+        width: 50%
+    }
+}
+@media screen and (max-width:900px) {
+    /* Zusätzliche Regeln noch kleinere Monitore  */
+    .cons_flex{
+        width: 100%
+    }
+ }
+</style>
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Abitur 2023 Finanzen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Abitur Finanzen 2023</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="/datenschutz">Datenschutz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+<form action="/login.html" method="POST" class="cons_flex">
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
+        <input type="text" name="username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Passwort</span>
+        <input type="password" name="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <input type="submit" style="max-height: 120px" value="Anmelden">
+</form>
+
+{% endblock %}

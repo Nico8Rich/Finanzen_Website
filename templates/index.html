@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Spenden und Ausgaben</title>
+<style>
+    /* CSS-Styles für das Cookie-Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .cookie-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cookie-link {
+            color: #fff;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
+
+        .cookie-button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+@media screen and (min-width:901px) {
+    /* Noch größer, noch mehr Regeln */
+    .cons_flex{
+        width: 50%
+    }
+}
+@media screen and (max-width:900px) {
+    /* Zusätzliche Regeln noch kleinere Monitore  */
+    .cons_flex{
+        width: 100%
+    }
+ }
+</style>
+
+{% endblock %}
+
+
+{% block body %}
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Abitur 2023 Finanzen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Abitur Finanzen 2023</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="/datenschutz">Datenschutz</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+    
+<form action="/" method="POST" class="cons_flex">
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#spenden" role="button" aria-expanded="false" aria-controls="spenden">Spenden</a>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#ausgaben" aria-expanded="false" aria-controls="ausgaben">Ausgaben</button>
+        
+    </p>
+    
+        <div class="col">
+          <div class="collapse multi-collapse" id="spenden">
+            <div class="card card-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Unternehmen</span>
+                    <input type="text" name="unternehmen" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Geldbetrag</span>
+                    <input id="geld_s" name="geld_s" type="number" class="form-control" min="0" step="0.01" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col">
+          <div class="collapse multi-collapse" id="ausgaben">
+            <div class="card card-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Grund/Zweck</span>
+                    <input type="text" name="grund" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Geldbetrag</span>
+                    <input id="geld_a" name="geld_a" type="number" class="form-control" min="0" step="0.01" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <input type="submit" style="max-height: 120px" value="Bestätigen">
+</form>
+<script>
+    // JavaScript-Code zum Steuern des Cookie-Banners
+    document.addEventListener("DOMContentLoaded", function () {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptCookiesButton = document.getElementById("accept-cookies");
+
+    // Überprüfen, ob der Benutzer bereits zugestimmt hat
+    if (localStorage.getItem("cookie-consent") === "true") {
+        cookieBanner.style.display = "none";
+    } else {
+        cookieBanner.style.display = "block";
+    }
+
+    // Eventlistener für die Zustimmung
+    acceptCookiesButton.addEventListener("click", function () {
+        localStorage.setItem("cookie-consent", "true");
+        cookieBanner.style.display = "none";
+        });
+    });
+
+</script>
+<script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
+  
+    toggleButton.addEventListener('click', () => {
+        if (themeStylesheet.getAttribute('href') === '/static/css/light.css') {
+            themeStylesheet.setAttribute('href', '/static/css/dark.css');
+            toggleButton.textContent = 'Light Mode';
+        } else {
+            themeStylesheet.setAttribute('href', '/static/css/light.css');
+            toggleButton.textContent = 'Dark Mode';
+        }
+    });
+  </script>
+  
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        Diese Website keine verwendet Cookies, um Ihnen ein optimales Benutzererlebnis zu bieten.
+        <a href="/datenschutz" class="cookie-link">Datenschutzrichtlinien</a> |
+        <button id="accept-cookies" class="cookie-button">Akzeptieren</button>
+    </div>
+</div>
+
+
+{% endblock %}
+<!-- <div class="row"></div> -->

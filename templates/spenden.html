@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<title>Spenden und Ausgaben</title>
+<style>
+th {
+    background-color: #0ab40a;
+}
+
+@media screen and (max-width:900px) {
+    /* Zusätzliche Regeln noch kleinere Monitore  */
+    th{
+       text-align: center;
+    }
+ }
+</style>
+{% endblock %}
+
+
+{% block body %}
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/secure.html">Abitur 2023 Finanzen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Abitur Finanzen 2023</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="/datenschutz">Datenschutz</a>
+            </li>
+            <li class="nav-item">
+              <hr>
+              <a class="nav-link" href="/ausgaben.html">Ausgabenliste</a>
+              <a class="nav-link" href="/bilanz.html">Bilanz</a>
+              <hr>
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+<h1>Spendeneingaben</h1>
+
+
+    <table class="tableresp">
+        <tr>
+            <th>Id</th>
+            <th>Unternehmen</th>
+            <th>Betrag in EUR</th>
+            <th>Eintragsdatum</th>
+            <th>Zustand</th>            
+        </tr>
+        {% for spende in spenden %}
+            <tr>
+                <td>{{ spende.id }}</td>
+                <td>{{ spende.unternehmen }}</td>
+                <td>{{ spende.geld }}</td>
+                <td>{{ spende.date_created.date() }}</td>
+                <td>
+                    <a class="btn btn-secondary" href="/delete_spende/{{spende.id}}">Löschen</a>                        
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    
+
+{% endblock %}
